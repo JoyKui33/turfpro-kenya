@@ -2874,7 +2874,7 @@ ul.bulleted-list li:before {
 * Inner Banner styles 
 ***************************/
 .inner-banner {
-  background: #A8C41B url(../img/resources/background-inner.jpg) 0 0 no-repeat;
+  background: #caf107 url(../img/resources/about-image.jpg) 0 0 no-repeat;
   background-size: cover;
   padding: 75px 0;
 }
