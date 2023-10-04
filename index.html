@@ -565,19 +565,19 @@
 
 
 <div class="google-map-wrapper">
-    <div 
-      class="google-map skin-1" 
-      id="home-google-map" 
-      data-map-lat="-1.300484576988395" 
-      data-map-lng=" 36.77267671379778"
-      data-map-title="Ngong Road Arena, Nairobi, Kenya" 
-      data-icon-path="img/textures/marker.png"
-      data-map-zoom="15"
-      data-markers='{
-        "marker-1": [-1.300484576988395, 36.77267671379778, "<h4>Main Office</h4><p>Ngong Road Arena , Nairobi, Kenya</p>"]
-    }'>
+    
 
-     </div>
+   <div id="home-google-map">
+         <div id="map" style="width: 100%; height: 600px;"></div>
+
+   </div>
+
+  
+
+
+
+
+   
 
      <div class="request-qoute-box sec-pad in-map">
          <div class="container">
@@ -820,10 +820,28 @@
 
 
 
-<script src="http://maps.google.com/maps/api/js?key=AIzaSyAMUvXN5_tYP_b8UfCHWJNVQgezJEQHQyQ"></script>
-<script src="assets/gmaps.js"></script>
+<!-- <script src="http://maps.google.com/maps/api/js?key=AIzaSyAMUvXN5_tYP_b8UfCHWJNVQgezJEQHQyQ"></script>
+<script src="assets/gmaps.js"></script> -->
 <!-- google map helper -->
-<script src="assets/map-helper.js"></script>
+<!-- <script src="assets/map-helper.js"></script> -->
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMUvXN5_tYP_b8UfCHWJNVQgezJEQHQyQ&callback=initMap" async defer></script>
+
+
+<script>
+      function initMap() {
+        const map = new google.maps.Map(document.getElementById("map"), {
+          center: { lat: -1.300484576988395, lng: 36.77267671379778 },
+          zoom: 15, 
+        });
+
+        const marker = new google.maps.Marker({
+          position: { lat: -1.300484576988395, lng: 36.77267671379778 },
+          map: map,
+          title: "TurfPro Kenya", 
+        });
+      }
+</script>
 
 
 
