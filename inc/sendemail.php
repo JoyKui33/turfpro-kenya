@@ -1,8 +1,8 @@
 <?php
 
 // Define some constants
-define( "RECIPIENT_NAME", "John Doe" );
-define( "RECIPIENT_EMAIL", "mail@mail.com" );
+define( "RECIPIENT_NAME", "Turf Pro Kenya" );
+define( "RECIPIENT_EMAIL", "turfproke@gmail.com" );
 
 // Read the form values
 $success = false;
@@ -34,7 +34,7 @@ if ( $name && $senderEmail && $message ) {
   $recipient = RECIPIENT_NAME . " <" . RECIPIENT_EMAIL . ">";
   $headers = "From: " . $name . " <" . $senderEmail . ">";  
   $success = mail( $recipient, $mail_subject, $body, $headers );
-  echo "<div class='inner success'><p class='success'>Thanks for contacting us. We will contact you ASAP!</p></div><!-- /.inner -->";
+  echo "<div class='inner success'><p class='success'>Thanks you for reachin out. We will contact you ASAP!</p></div><!-- /.inner -->";
 }else {
 	echo "<div class='inner error'><p class='error'>Something went wrong. Please try again.</p></div><!-- /.inner -->";
 }

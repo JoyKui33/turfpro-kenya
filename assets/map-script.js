@@ -133,8 +133,8 @@ function gMapHome () {
 				
 				map.addMarker({
 			    	icon: 'images/logo/1.png',
-			    	lat: 40.925372,
-			      	lng: -74.276544,
+			    	lat: -1.30054896906042,
+			      	lng: 36.77264450063561,
 			      	title: 'North Parchrtome Steet ',
 			      	infoWindow: {
 						content: '<h6>North Parchrtome Steet</h6> <p>Marbella, Luxury Villa</p>'

@@ -2752,7 +2752,7 @@ ul.bulleted-list li:before {
 }
 
 #home-google-map {
-  width: 100%;
+  width: 50%;
   height: 100%;
   position: absolute;
   top: 0;
