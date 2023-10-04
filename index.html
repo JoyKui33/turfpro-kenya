@@ -591,33 +591,36 @@
                         </div><!-- /.inner-->
                     </div><!-- /.sec-title-->
                     <div class="inner-box">
-                        <form action="#" class="contact-form">
-                            <div class="row">
+                    <form action="#" class="contact-form" id="quote-form" method="post">
+                        <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-grp">
                                         <div class="select-box">
-                                            <select class="selectpicker">
+                                            <select class="selectpicker" id="services">
                                                 <option value="">Select Your Services</option>
-                                                <option value="1">Field Design </option>
-                                                <option value="2">Consultation </option>
-                                                <option value="3">Supply and Installation </option>
+                                                <option value="Field Design">Field Design </option>
+                                                <option value="Consultation">Consultation </option>
+                                                <option value="Supply and Installation">Supply and Installation </option>
                                             </select>
                                         </div><!-- /.select-box -->
                                     </div><!-- /.form-grp -->
                                 </div><!-- /.col-md-12 -->
                                 <div class="col-md-6">
                                     <div class="form-grp">
-                                        <input type="text" name="name" placeholder="Your Name *" />
+                                        <input type="text" name="name" placeholder="Your Name *" id="qname" />
+                                        <p id="qnamerror"></p>
                                     </div><!-- /.form-grp -->
                                 </div><!-- /.col-md-6 -->
                                 <div class="col-md-6">
                                     <div class="form-grp">
-                                        <input type="text" name="email" placeholder="Your E-mail *" />
+                                        <input type="text" name="email" placeholder="Your E-mail *" id="qemail" />
+                                        <p id="qemailerror"></p>
                                     </div><!-- /.form-grp -->
                                 </div><!-- /.col-md-6 -->
                                 <div class="col-md-6">
                                     <div class="form-grp">
-                                        <input type="text" name="phone" placeholder="Phone Number *" />
+                                        <input type="text" name="phone" placeholder="Phone Number *" id="qphone" />
+                                        <p id="qphonerror"></p>
                                     </div><!-- /.form-grp -->
                                 </div><!-- /.col-md-6 -->
                                 <div class="col-md-6">
@@ -627,6 +630,7 @@
                                 </div><!-- /.col-md-6 -->
                             </div><!-- /.orw -->
                         </form>
+                        <P id="successmsg"></P>
                         <p><label>For Business :</label>  For business inquiry fill our feedback form or send us an <a class="highlight" href="turfproke@gmail.com">email</a> or call us on <span class="highlight"> +254707120316.</span></p>
                         <p><label>Office Hours :</label> 08:30 and 16:30 Mon to Fri, Sat - 8:30 - 12:30</p>
                     </div><!-- /.inner-box -->
@@ -878,6 +882,7 @@
 <script src="assets/Polyglot-Language-Switcher-master/js/jquery.polyglot.language.switcher.js"></script>
 
 <script src="js/custom.js"></script>
+<script src="js/form.js"></script>
 
 
 </body>

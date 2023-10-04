@@ -268,7 +268,7 @@
                 id="contact-form"
                 name="contact_form"
                 class="contact-form"
-                action="inc/sendmail.php"
+                action="#"
                 method="post"
               >
                 <div class="row clearfix">
@@ -281,7 +281,9 @@
                         value=""
                         placeholder="Your Name *"
                         required=""
+                        id="cname"
                       />
+                      <p id="cnamerror"></p>
                     </div>
                   </div>
                   <div class="col-md-6 col-sm-6 col-xs-12">
@@ -293,7 +295,9 @@
                         value=""
                         placeholder="Your Mail *"
                         required=""
+                        id="cemail"
                       />
+                      <p id="cemailerror"></p>
                     </div>
                   </div>
                   <div class="col-md-6 col-sm-6 col-xs-12">
@@ -304,7 +308,9 @@
                         class="form-control"
                         value=""
                         placeholder="Phone Number*"
+                        id="cphone"
                       />
+                      <p id="cphonerror"></p>
                     </div>
                   </div>
                   <div class="col-md-6 col-sm-6 col-xs-12">
@@ -315,7 +321,9 @@
                         class="form-control"
                         value=""
                         placeholder="Subject"
+                        id="csubject"
                       />
+                      <p id="csubjecterror"></p>
                     </div>
                   </div>
                   <div class="col-md-12 col-sm-12 col-xs-12">
@@ -324,7 +332,9 @@
                         name="form_message"
                         class="form-control textarea required"
                         placeholder="Your Message...."
+                        id="cmessage"
                       ></textarea>
+                      <p id="cmessagerro"></p>
                     </div>
                   </div>
                   <div class="col-md-12 col-sm-12 col-xs-12">
@@ -340,6 +350,7 @@
                         class="thm-btn"
                         type="submit"
                         data-loading-text="Please wait..."
+                        id="contact-form"
                       >
                         send message
                       </button>
@@ -347,6 +358,7 @@
                   </div>
                 </div>
               </form>
+              <p id="msg"></p>
             </div>
           </div>
           <!-- /.col-md-8 -->
@@ -624,7 +636,8 @@
 
     <script src="assets/Polyglot-Language-Switcher-master/js/jquery.polyglot.language.switcher.js"></script>
 
-    <script src="js/validation.js"></script>
+    <!-- <script src="js/validation.js"></script> -->
     <script src="js/custom.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>
