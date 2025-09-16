@@ -1046,6 +1046,24 @@ function mapAddress() {
 //     });
 // }
 
+
+function countrySwitcher() {
+  var $select = $(".country-select");
+  if ($select.length) {
+    var navigate = function (target) {
+      if (target) {
+        window.location.href = target;
+      }
+    };
+    $select.on("change", function () {
+      navigate($(this).val());
+    });
+    $select.on("changed.bs.select", function () {
+      navigate($(this).val());
+    });
+  }
+}
+
 // instance of fuction while Document ready event
 jQuery(document).on("ready", function () {
   (function ($) {
@@ -1064,6 +1082,7 @@ jQuery(document).on("ready", function () {
     mobileNavToggle();
     backgroundSlider();
     languageSwitcher();
+    countrySwitcher();
     mapAddress();
   })(jQuery);
 });

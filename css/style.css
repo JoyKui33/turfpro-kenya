@@ -19,16 +19,8 @@
 @import url(../assets/lsp-icon/style.css);
 @import url(../assets/owl.carousel-2/assets/owl.carousel.css);
 @import url(../assets/owl.carousel-2/assets/owl.theme.default.min.css);
-@import url(../assets/nouislider/nouislider.css);
-@import url(../assets/nouislider/nouislider.pips.css);
-@import url(../assets/bootstrap-touch-spin/jquery.bootstrap-touchspin.css);
-@import url(../assets/masterslider/style/masterslider.css);
-@import url(../assets/masterslider/skins/default/style.css);
-@import url(../assets/masterslider/staffcarousel/style/ms-staff-style.css);
-@import url(../assets/bxslider/dist/jquery.bxslider.min.css);
 @import url(../assets/Magnific-Popup-master/dist/magnific-popup.css);
 @import url(../assets/animate.min.css);
-@import url(../assets/Polyglot-Language-Switcher-master/css/polyglot-language-switcher.css);
 /************************** 
 * Miscelnious styles 
 ***************************/
@@ -454,6 +446,38 @@ ul.bulleted-list li:before {
 .header .header-top {
   background: #1F1F1F;
   padding: 12px 0;
+}
+
+.header .header-top .bootstrap-select.country-select > .dropdown-toggle,
+.header .header-top select.country-select {
+  background: #A8C41B;
+  color: #fff;
+  border-radius: 20px;
+  padding: 5px 18px;
+  border: 1px solid #8daa18;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+.header .header-top .bootstrap-select.country-select > .dropdown-toggle:focus,
+.header .header-top .bootstrap-select.country-select > .dropdown-toggle:hover {
+  background: #94b216;
+  color: #fff;
+}
+.header .header-top .bootstrap-select.country-select.btn-group .dropdown-toggle .filter-option {
+  color: #fff;
+}
+.header .header-top .bootstrap-select.country-select.btn-group .dropdown-toggle .caret:before {
+  color: #fff;
+}
+.header .header-top .bootstrap-select.country-select .dropdown-menu > li > a span {
+  color: #494949;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+}
+.header .header-top .bootstrap-select.country-select .dropdown-menu > li > a:hover span {
+  color: #fff;
 }
 .header .header-top .bootstrap-select > .dropdown-toggle {
   padding: 0 10px;
